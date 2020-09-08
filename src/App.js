@@ -2,18 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [monsters, setMonsters] = useState([]);
+  const [characters, setCharacters] = useState();
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch(`https://rickandmortyapi.com/api/character`)
       .then(res => res.json())
-      .then(users => setMonsters(users));
+      .then(data => setCharacters(data.results));
   }, []);
+
   return (
     <div className='App'>
-      {monsters.map(monster => (
-        <h1>{monster.name}</h1>
-      ))}
+      {characters && characters.map(char => <h1 key={char.id}>{char.name}</h1>)}
     </div>
   );
 }
