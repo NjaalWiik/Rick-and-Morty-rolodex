@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+import CardList from './components/cardList/CardList.jsx';
+
 function App() {
   const [characters, setCharacters] = useState();
 
@@ -12,7 +14,10 @@ function App() {
 
   return (
     <div className='App'>
-      {characters && characters.map(char => <h1 key={char.id}>{char.name}</h1>)}
+      <CardList props={characters}>
+        {characters &&
+          characters.map(char => <h1 key={char.id}>{char.name}</h1>)}
+      </CardList>
     </div>
   );
 }
