@@ -14,10 +14,7 @@ function App() {
 
   return (
     <div className='App'>
-      <CardList props={characters}>
-        {characters &&
-          characters.map(char => <h1 key={char.id}>{char.name}</h1>)}
-      </CardList>
+      <CardList characters={characters} />
     </div>
   );
 }
