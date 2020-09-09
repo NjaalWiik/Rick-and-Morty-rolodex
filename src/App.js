@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import CardList from './components/cardList/CardList.jsx';
+import CardList from './components/cardList/CardList';
+import SearchBox from './components/searchBox/SearchBox';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -13,12 +14,6 @@ function App() {
       .then(data => setCharacters(data.results));
   }, []);
 
-  const onChange = e => setSearch(e.target.value.toLowerCase());
-
-  useEffect(() => {
-    console.log(search);
-  }, [search]);
-
   const filteredCharacters = characters.filter(
     char =>
       char.name.toLowerCase().includes(search) ||
@@ -27,9 +22,11 @@ function App() {
       char.origin.name.toLowerCase().includes(search)
   );
 
+  const onChange = e => setSearch(e.target.value.toLowerCase());
+
   return (
     <div className='App'>
-      <input type='search' placeholder='search character' onChange={onChange} />
+      <SearchBox onChange={onChange} placeholder='search for characters' />
       <CardList characters={filteredCharacters} />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardList_styling.css';
+import './CardList_style.css';
 
 import Card from '../card/Card';
 
