@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53c7d7a44c49e7b061878b6d8ef0c25c",
+    "revision": "2e70a0833f230282882cc2f84aea4eaa",
     "url": "/Rick-and-Morty-rolodex/index.html"
   },
   {
-    "revision": "e86446e24017269d6d5b",
-    "url": "/Rick-and-Morty-rolodex/static/css/main.acf487a9.chunk.css"
+    "revision": "03bdf8eeb45557f097f8",
+    "url": "/Rick-and-Morty-rolodex/static/css/main.22d190ad.chunk.css"
   },
   {
     "revision": "43cd1e4b3cd0a6e923d0",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Rick-and-Morty-rolodex/static/js/2.51b5c0f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e86446e24017269d6d5b",
+    "revision": "03bdf8eeb45557f097f8",
     "url": "/Rick-and-Morty-rolodex/static/js/main.07f1e3b7.chunk.js"
   },
   {
