@@ -9,9 +9,16 @@ function App() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character`)
-      .then(res => res.json())
-      .then(data => setCharacters(data.results));
+    const tempData = [];
+    for (let i = 1; i <= 34; i++) {
+      fetch(`https://rickandmortyapi.com/api/character?page=${i}`)
+        .then(res => res.json())
+        .then(data => tempData.push(data.results))
+        .then(() => {
+          let merged = [].concat.apply([], tempData);
+          setCharacters(merged);
+        });
+    }
   }, []);
 
   const filteredCharacters = characters.filter(
