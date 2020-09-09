@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className='App'>
+      <h1>Rick and Morty Rolodex</h1>
       <SearchBox onChange={onChange} placeholder='search for characters' />
       <CardList characters={filteredCharacters} />
     </div>
