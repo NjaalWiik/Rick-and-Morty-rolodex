@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "686160e5cc49f0906d875a66a97c727b",
+    "revision": "53a3fd4999fc946bc1a0d50b6eb91cf2",
     "url": "/Rick-and-Morty-rolodex/index.html"
   },
   {
