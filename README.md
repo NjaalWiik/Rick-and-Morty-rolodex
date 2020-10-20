@@ -1,2 +1,2 @@
 Test it here:
-https://njaalwiik.github.io/Rick-and-Morty-rolodex/
+https://njaalwiik.github.io/front-end-rick-and-Morty-rolodex/
